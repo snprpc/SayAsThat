@@ -16,7 +16,7 @@ return [
     |
     */
 
-    'debug' => true,
+    'debug' => env('APP_DEBUG', true),
 
     /*
     |--------------------------------------------------------------------------
@@ -28,7 +28,7 @@ return [
     | any other location as required by the application or its packages.
     */
 
-    'name' => 'October CMS',
+    'name' => '歧异歧义',
 
     /*
     |--------------------------------------------------------------------------
@@ -41,7 +41,7 @@ return [
     |
     */
 
-    'url' => 'http://localhost',
+    'url' => env('APP_URL', 'http://localhost'),
 
     /*
     |--------------------------------------------------------------------------
@@ -93,7 +93,7 @@ return [
     |
     */
 
-    'key' => 'OPRrBGvVV35IKb1J3o0JSqEjIfZLTTI5',
+    'key' => env('APP_KEY', ''),
 
     'cipher' => 'AES-256-CBC',
 
