@@ -6,21 +6,11 @@ fields:
     site_name:
         label: Site name
         comment: The website name as it should appear on the front-end
-        default: October CMS
+        default: 歧异歧义
         span: auto
 
     site_motto:
         label: Site motto
         comment: A short statement about the website.
-        default: Get back to basics
+        default: 年轻人的发声练习
         span: auto
-
-    facebook_url:
-        label: Facebook URL
-        span: auto
-        default: https://www.facebook.com/
-
-    twitter_url:
-        label: Twitter URL
-        span: auto
-        default: https://www.twitter.com/

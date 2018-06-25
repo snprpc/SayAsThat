@@ -1,0 +1,24 @@
+1529895324a:1:{s:15:"site/footer.htm";a:5:{s:8:"fileName";s:15:"site/footer.htm";s:7:"content";s:402:"<div class="footer-inner text-center">
+    <p class="muted credit">
+        &copy; 2013 - {{ "now"|date("Y") }}
+        <br/>
+        &mdash; Powered by <a href="#">October CMS</a>
+        <br/>
+        using <a href="https://github.com/responsiv/clean-theme">a clean theme</a>.
+    </p>
+    <!-- <p class="muted credit">
+        Copyright 2018 歧异歧义微信公众号运营部
+    </p> -->
+</div>
+";s:5:"mtime";i:1529893482;s:6:"markup";s:401:"<div class="footer-inner text-center">
+    <p class="muted credit">
+        &copy; 2013 - {{ "now"|date("Y") }}
+        <br/>
+        &mdash; Powered by <a href="#">October CMS</a>
+        <br/>
+        using <a href="https://github.com/responsiv/clean-theme">a clean theme</a>.
+    </p>
+    <!-- <p class="muted credit">
+        Copyright 2018 歧异歧义微信公众号运营部
+    </p> -->
+</div>";s:4:"code";N;}}

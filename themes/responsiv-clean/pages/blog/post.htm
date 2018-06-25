@@ -35,14 +35,14 @@ function onEnd()
             </div>
         {% endif %}
         <header class="post-title">
-            <h1>{{ post.title }}</h1>
+            <h2>{{ post.title }}</h2>
         </header>
 
         <div class="post-content">
             {{ post.content_html|raw }}
         </div>
 
-        <footer>
+        <!-- <footer>
             <span class="published"><i class="icon icon-calendar"></i> {{ post.published_at|date('M d, Y') }}</span>
             {# <span class="author"><i class="icon icon-user"></i> {{ post.author.full_name }}</span> #}
             {% if post.categories.count %} in
@@ -53,7 +53,7 @@ function onEnd()
                     {% endfor %}
                 </span>
             {% endif %}
-        </footer>
+        </footer> -->
     </article>
     <nav class="post-links">
         {% if lastPost %}

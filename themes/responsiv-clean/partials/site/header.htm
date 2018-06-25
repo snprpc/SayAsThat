@@ -1,20 +1,52 @@
-<div class="row">
-    <div class="col-sm-9">
-        <h1 class="site-name">
-            <a href="{{ 'home'|page }}">{{ this.theme.site_name }}</a>
-        </h1>
-        <p class="site-motto">
-            {{ this.theme.site_motto }}
-        </p>
+<nav class="navbar" role="navigation">
+    <div class="navbar-header col-md-3">
+        <div class="row">
+            <div class="col-sm-9 col-xs-9">
+                <h1 class="site-name">
+                    <a href="{{ 'home'|page }}">{{ this.theme.site_name }}</a>
+                </h1>
+                <div class="site-motto lead">
+                    年轻发人的发声练习
+                </div>
+            </div>
+            <div class="col-sm-3 col-xs-3">
+                <button type="button" class="sidebar-toggle visible-xs visible-ms" onclick="toggleSidebar()">
+                    <span class="icon-bars">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </span>
+                </button>
+            </div>
+        </div>
     </div>
-    <div class="col-sm-3">
-        <button type="button" class="sidebar-toggle" onclick="toggleSidebar()">
-            <span class="icon-bars">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </span>
-            <span class="menu-text">Menu</span>
-        </button>
+    <div class="navbar-cell col-md-3  hidden-xs hidden-ms">
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">活动</a></li>
+            <li><a href="#">精选</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    文章
+                    <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">小说</a></li>
+                    <li><a href="#">随笔</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">今日美文</a></li>
+                </ul>
+            </li>
+        </ul>
     </div>
-</div>
+    <div class="navbar-cell col-md-3  hidden-xs hidden-ms">
+        <ul class="nav navbar-nav">
+            <li><a href="#">关于我们</a></li>
+            <li><a href="#">悄悄话</a></li>
+        </ul>
+    </div>
+    <div class="navbar-cell col-md-offset-1 col-md-2 hidden-xs hidden-ms">
+        <button type="button" class="btn btn-danger navbar-button" style="margin-top: 15px; margin-bottom: 15px;">微信登录</button>
+    </div>
+
+</nav>
