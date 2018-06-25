@@ -1,7 +1,38 @@
-1529899696a:1:{s:9:"hello.htm";a:9:{s:8:"fileName";s:9:"hello.htm";s:7:"content";s:92:"url='hello'
+1529925306a:1:{s:9:"hello.htm";a:10:{s:8:"fileName";s:9:"hello.htm";s:7:"content";s:617:"url='/hello'
 title='hello'
 layout='hello'
 description='about hello'
+
+[blogCategories]
+slug = "{{ :slug }}"
+displayEmpty = "0"
+categoryPage = "blog/category"
 ==
 <h1>Hello, World</h1>
-";s:5:"mtime";i:1529842336;s:6:"markup";s:21:"<h1>Hello, World</h1>";s:4:"code";N;s:3:"url";s:5:"hello";s:5:"title";s:5:"hello";s:6:"layout";s:5:"hello";s:11:"description";s:11:"about hello";}}
+<div class="list-group">
+    {% for category in categories %}
+        {% set postCount = category.post_count %}
+        <a
+            href="{{ category.url }}"
+            class="list-group-item {{ category.slug == currentCategorySlug ? 'active' }}"
+            >{{ category.name }}
+            {% if postCount %}
+                <span class="badge">{{ postCount }}</span>
+            {% endif %}
+        </a>
+    {% endfor %}
+</div>
+";s:5:"mtime";i:1529915243;s:6:"markup";s:456:"<h1>Hello, World</h1>
+<div class="list-group">
+    {% for category in categories %}
+        {% set postCount = category.post_count %}
+        <a
+            href="{{ category.url }}"
+            class="list-group-item {{ category.slug == currentCategorySlug ? 'active' }}"
+            >{{ category.name }}
+            {% if postCount %}
+                <span class="badge">{{ postCount }}</span>
+            {% endif %}
+        </a>
+    {% endfor %}
+</div>";s:4:"code";N;s:3:"url";s:6:"/hello";s:5:"title";s:5:"hello";s:6:"layout";s:5:"hello";s:11:"description";s:11:"about hello";s:14:"blogCategories";a:3:{s:4:"slug";s:11:"{{ :slug }}";s:12:"displayEmpty";s:1:"0";s:12:"categoryPage";s:13:"blog/category";}}}

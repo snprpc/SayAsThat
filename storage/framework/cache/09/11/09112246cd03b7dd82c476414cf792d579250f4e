@@ -1,4 +1,4 @@
-1529899696a:1:{s:11:"default.htm";a:6:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:811:"description = "Default layout"
+1529925306a:1:{s:11:"default.htm";a:6:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:841:"description = "Default layout"
 ==
 <!DOCTYPE html>
 <html>
@@ -14,7 +14,7 @@
             </header>
 
             <!-- Sidebar -->
-            <section id="layout-sidebar">
+            <section id="layout-sidebar" class="visible-xs visible-ms">
                 {% partial 'site/sidebar' %}
             </section>
 
@@ -33,7 +33,7 @@
         {% partial 'site/scripts' %}
     </body>
 </html>
-";s:5:"mtime";i:1529887571;s:6:"markup";s:776:"<!DOCTYPE html>
+";s:5:"mtime";i:1529921139;s:6:"markup";s:806:"<!DOCTYPE html>
 <html>
     <head>
         {% partial 'site/meta' %}
@@ -47,7 +47,7 @@
             </header>
 
             <!-- Sidebar -->
-            <section id="layout-sidebar">
+            <section id="layout-sidebar" class="visible-xs visible-ms">
                 {% partial 'site/sidebar' %}
             </section>
 

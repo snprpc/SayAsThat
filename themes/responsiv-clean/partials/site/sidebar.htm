@@ -1,19 +1,27 @@
 [blogPosts]
+[blogCategories]
 postsPerPage = "5"
 categoryPage = "blog/category"
 postPage = "blog/post"
 sortOrder = "published_at desc"
 ==
 <div class="hidden-md">
-    <div class="sidebar-close visible-xs">
+    <div class="sidebar-close visible-xs visible-ms">
         <a href="javascript:;" onclick="toggleSidebar()" class="close">&times;</a>
     </div>
 
     <div class="sidebar-segment">
-        <h2 class="segment-title">精选</h2>
+        <h2 class="segment-title">活动</h2>
         <ul class="segment-list">
-            {% for post in blogPosts.posts %}
-                <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+            <li><a href="#">活动一</a></li>
+        </ul>
+    </div>
+    <div class="sidebar-segment">
+        <h2 class="segment-title">文章</h2>
+        <ul class="segment-list">
+            {% set categories = blogCategories.categories %}
+            {% for category in categories %}
+                <li><a href="{{ category.url }}">{{ category.name }}</a></li>
             {% endfor %}
         </ul>
     </div>

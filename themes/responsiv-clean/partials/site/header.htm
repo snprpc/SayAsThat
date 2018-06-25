@@ -1,4 +1,4 @@
-
+[blogCategories]
 ==
 <nav class="navbar" role="navigation">
     <div class="navbar-header col-md-3">
@@ -8,7 +8,7 @@
                     <a href="{{ 'home'|page }}">{{ this.theme.site_name }}</a>
                 </h1>
                 <div class="site-motto lead">
-                    年轻发人的发声练习
+                    年轻人的发声练习
                 </div>
             </div>
             <div class="col-sm-3 col-xs-3">
@@ -33,10 +33,10 @@
                     <b class="caret"></b>
                 </a>
                 <ul class="dropdown-menu">
-                    <li><a href="#">小说</a></li>
-                    <li><a href="#">随笔</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#">今日美文</a></li>
+                    {% set categories = blogCategories.categories %}
+                    {% for category in categories %}
+                        <li><a href="{{ category.url }}">{{ category.name }}</a></li>
+                    {% endfor %}
                 </ul>
             </li>
         </ul>

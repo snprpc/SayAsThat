@@ -1,4 +1,4 @@
-1529899697a:1:{s:15:"site/header.htm";a:6:{s:8:"fileName";s:15:"site/header.htm";s:7:"content";s:2111:"
+1529925308a:1:{s:15:"site/header.htm";a:6:{s:8:"fileName";s:15:"site/header.htm";s:7:"content";s:2157:"[blogCategories]
 ==
 <nav class="navbar" role="navigation">
     <div class="navbar-header col-md-3">
@@ -8,7 +8,7 @@
                     <a href="{{ 'home'|page }}">{{ this.theme.site_name }}</a>
                 </h1>
                 <div class="site-motto lead">
-                    年轻发人的发声练习
+                    年轻人的发声练习
                 </div>
             </div>
             <div class="col-sm-3 col-xs-3">
@@ -33,10 +33,10 @@
                     <b class="caret"></b>
                 </a>
                 <ul class="dropdown-menu">
-                    <li><a href="#">小说</a></li>
-                    <li><a href="#">随笔</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#">今日美文</a></li>
+                    {% set categories = blogCategories.categories %}
+                    {% for category in categories %}
+                        <li><a href="{{ category.url }}">{{ category.name }}</a></li>
+                    {% endfor %}
                 </ul>
             </li>
         </ul>
@@ -52,7 +52,7 @@
     </div>
 
 </nav>
-";s:5:"mtime";i:1529895353;s:6:"markup";s:2106:"<nav class="navbar" role="navigation">
+";s:5:"mtime";i:1529920957;s:6:"markup";s:2136:"<nav class="navbar" role="navigation">
     <div class="navbar-header col-md-3">
         <div class="row">
             <div class="col-sm-9 col-xs-9">
@@ -60,7 +60,7 @@
                     <a href="{{ 'home'|page }}">{{ this.theme.site_name }}</a>
                 </h1>
                 <div class="site-motto lead">
-                    年轻发人的发声练习
+                    年轻人的发声练习
                 </div>
             </div>
             <div class="col-sm-3 col-xs-3">
@@ -85,10 +85,10 @@
                     <b class="caret"></b>
                 </a>
                 <ul class="dropdown-menu">
-                    <li><a href="#">小说</a></li>
-                    <li><a href="#">随笔</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#">今日美文</a></li>
+                    {% set categories = blogCategories.categories %}
+                    {% for category in categories %}
+                        <li><a href="{{ category.url }}">{{ category.name }}</a></li>
+                    {% endfor %}
                 </ul>
             </li>
         </ul>
@@ -103,4 +103,4 @@
         <button type="button" class="btn btn-danger navbar-button" style="margin-top: 15px; margin-bottom: 15px;">微信登录</button>
     </div>
 
-</nav>";s:4:"code";N;s:17:"_PARSER_ERROR_INI";s:0:"";}}
+</nav>";s:4:"code";N;s:14:"blogCategories";a:0:{}}}

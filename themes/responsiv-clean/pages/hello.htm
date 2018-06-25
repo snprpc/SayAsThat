@@ -1,6 +1,24 @@
-url='hello'
+url='/hello'
 title='hello'
 layout='hello'
 description='about hello'
+
+[blogCategories]
+slug = "{{ :slug }}"
+displayEmpty = "0"
+categoryPage = "blog/category"
 ==
 <h1>Hello, World</h1>
+<div class="list-group">
+    {% for category in categories %}
+        {% set postCount = category.post_count %}
+        <a
+            href="{{ category.url }}"
+            class="list-group-item {{ category.slug == currentCategorySlug ? 'active' }}"
+            >{{ category.name }}
+            {% if postCount %}
+                <span class="badge">{{ postCount }}</span>
+            {% endif %}
+        </a>
+    {% endfor %}
+</div>

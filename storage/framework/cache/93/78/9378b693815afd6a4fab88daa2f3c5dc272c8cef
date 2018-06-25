@@ -1,4 +1,4 @@
-1529899696a:1:{s:13:"blog/post.htm";a:12:{s:8:"fileName";s:13:"blog/post.htm";s:7:"content";s:2061:"title = "Blog Post"
+1529925306a:1:{s:13:"blog/post.htm";a:12:{s:8:"fileName";s:13:"blog/post.htm";s:7:"content";s:2068:"title = "Blog Post"
 url = "/blog/post/:slug"
 layout = "default"
 description = "Viewing a single blog post"
@@ -58,19 +58,19 @@ function onEnd()
     <nav class="post-links">
         {% if lastPost %}
             <a href="{{ lastPost.url }}" class="link-previous">
-                <p>Previous</p>
+                <p>上一篇s</p>
                 <span>{{ lastPost.title }}</span>
             </a>
         {% endif %}
         {% if nextPost %}
             <a href="{{ nextPost.url }}" class="link-next">
-                <p>Next</p>
+                <p>下一篇</p>
                 <span>{{ nextPost.title }}</span>
             </a>
         {% endif %}
     </nav>
 </div>
-";s:5:"mtime";i:1529894948;s:6:"markup";s:1653:"{% set image = post.featured_images.first %}
+";s:5:"mtime";i:1529914332;s:6:"markup";s:1660:"{% set image = post.featured_images.first %}
 {% set nextPost = blogPost.nextPost %}
 {% set lastPost = blogPost.previousPost %}
 
@@ -105,13 +105,13 @@ function onEnd()
     <nav class="post-links">
         {% if lastPost %}
             <a href="{{ lastPost.url }}" class="link-previous">
-                <p>Previous</p>
+                <p>上一篇s</p>
                 <span>{{ lastPost.title }}</span>
             </a>
         {% endif %}
         {% if nextPost %}
             <a href="{{ nextPost.url }}" class="link-next">
-                <p>Next</p>
+                <p>下一篇</p>
                 <span>{{ nextPost.title }}</span>
             </a>
         {% endif %}
