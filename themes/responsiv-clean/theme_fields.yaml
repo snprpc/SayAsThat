@@ -6,11 +6,11 @@ fields:
     site_name:
         label: Site name
         comment: The website name as it should appear on the front-end
-        default: 歧异歧义
+        default: 如是说
         span: auto
 
     site_motto:
         label: Site motto
         comment: A short statement about the website.
-        default: 年轻人的发声练习
+        default: 世界我想对你说
         span: auto
