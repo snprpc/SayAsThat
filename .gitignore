@@ -1,6 +1,5 @@
 /bootstrap/compiled.php
 /vendor
-/storage/*
 composer.phar
 .DS_Store
 .idea
@@ -16,6 +15,5 @@ php-errors.log
 sftp-config.json
 selenium.php
 composer.lock
-
 # for netbeans
 nbproject

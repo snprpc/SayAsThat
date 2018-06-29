@@ -5,7 +5,7 @@
         <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
         <h5>
             原创</br></br>
-            <span class="author"><a href="#">李文博</a></span>
+            <span class="author"><a href="#">{{ post.author }}</a></span>
             {% if post.categories.count %}
             <span class="category">
                 <i> | </i>
