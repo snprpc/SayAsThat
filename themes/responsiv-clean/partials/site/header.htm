@@ -36,6 +36,7 @@
                     {% set categories = blogCategories.categories %}
                     {% for category in categories %}
                         <li><a href="{{ category.url }}">{{ category.name }}</a></li>
+                        <li>{{ category.url }}</li>
                     {% endfor %}
                 </ul>
             </li>
@@ -45,6 +46,7 @@
         <ul class="nav navbar-nav">
             <li><a href="#">关于我们</a></li>
             <li><a href="#">悄悄话</a></li>
+            <li><a href="#">作者</a></li>
         </ul>
     </div>
     <div class="navbar-cell col-md-offset-1 col-md-2 hidden-xs hidden-ms">

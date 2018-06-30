@@ -7,6 +7,7 @@ pageNumber = "{{ :page }}"
 postsPerPage = "10"
 sortOrder = "published_at desc"
 categoryPage = "blog/category"
+authorPage = "blog/author"
 postPage = "blog/post"
 
 [resources]
@@ -36,5 +37,5 @@ public function onPagePosts()
     data-request-update="'home/posts': '@#homePosts'"
     data-current-page="1"
     data-last-page="{{ posts.lastPage }}">
-    <a class="text-muted oc-loading">Fetching posts..</a>
+    <a class="text-muted oc-loading">加载更多内容 ...</a>
 </div>
