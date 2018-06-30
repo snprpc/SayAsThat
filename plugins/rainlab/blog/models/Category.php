@@ -37,7 +37,8 @@ class Category extends Model
     protected $guarded = [];
 
     public $belongsToMany = [
-        'posts' => ['RainLab\Blog\Models\Post',
+        'posts' => [
+            'RainLab\Blog\Models\Post',
             'table' => 'rainlab_blog_posts_categories',
             'order' => 'published_at desc',
             'scope' => 'isPublished'

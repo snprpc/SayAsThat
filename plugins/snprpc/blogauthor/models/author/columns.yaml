@@ -1,0 +1,29 @@
+# ===================================
+#  Column Definitions
+# ===================================
+
+columns:
+    author_real_name:
+        label: snprpc.blogauthor::lang.list.real_name
+        searchable: true
+
+    author_pen_name:
+        label: snprpc.blogauthor::lang.list.pen_name
+        searchable: true
+
+    author_weixin_code:
+        label: snprpc.blogauthor::lang.list.weixin_code
+        sortable: false
+
+    author_identity:
+        label: snprpc.blogauthor::lang.list.identity
+        sortable: false
+
+    author_tel:
+        label: snprpc.blogauthor::lang.list.tel
+        sortable: false
+
+    created_at:
+        label: snprpc.blogauthor::lang.list.created
+        type: date
+        invisible: true

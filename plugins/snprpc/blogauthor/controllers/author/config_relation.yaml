@@ -1,0 +1,12 @@
+# ===================================
+#  Relation Behavior Config
+# ===================================
+
+items:
+    label: Invoice Line Item
+    view:
+        list: ~/plugins/rainlab/blog/models/category/fields.yaml
+        toolbarButtons: create|delete
+    manage:
+        form: ~/plugins/rainlab/blog/models/category/colomns.yaml
+        recordsPerPage: 10

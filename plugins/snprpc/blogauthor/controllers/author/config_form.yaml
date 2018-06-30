@@ -1,0 +1,21 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+name: snprpc.blogauthor::lang.form.create_author
+form: ~/plugins/snprpc/blogauthor/models/author/fields.yaml
+modelClass: Snprpc\BlogAuthor\Models\Author
+defaultRedirect: snprpc/blogauthor/authors
+
+create:
+    title: snprpc.blogauthor::lang.form.create_title
+    redirect: snprpc/blogauthor/author/update/:id
+    redirectClose: snprpc/blogauthor/author
+    flashSave: snprpc.blogauthor::lang.form.create_success
+
+update:
+    title: snprpc.blogauthor::lang.form.update_title
+    redirect: snprpc/blogauthor/author
+    redirectClose: snprpc/blogauthor/author
+    flashSave: snprpc.blogauthor::lang.form.update_success
+    flashDelete: snprpc.blogauthor::lang.form.update_delete

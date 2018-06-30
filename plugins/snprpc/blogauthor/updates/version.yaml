@@ -1,0 +1,5 @@
+1.0.1:
+  - First version of Blog Authors Extension
+  - create_authors_table.php
+  - add_author_column_for_blog.php
+  

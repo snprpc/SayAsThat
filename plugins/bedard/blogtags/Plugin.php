@@ -1,4 +1,4 @@
-r   <?php namespace Bedard\BlogTags;
+<?php namespace Bedard\BlogTags;
 
 use Backend;
 use Bedard\BlogTags\Models\Tag;

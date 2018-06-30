@@ -19,7 +19,6 @@ class CreateTagsTable extends Migration
             Schema::create('bedard_blogtags_tags', function($table)
             {
                 $this->dbSpecificSetup($table);
-
                 $table->increments('id');
                 $table->string('name')->unique()->nullable();
                 $table->timestamps();

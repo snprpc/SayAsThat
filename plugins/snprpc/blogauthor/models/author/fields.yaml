@@ -1,0 +1,78 @@
+# ===================================
+#  Field Definitions
+# ===================================
+secondaryTabs:
+    stretch: true
+    fields:
+        author_header:
+            tab: snprpc.blogauthor::lang.form.tab_individu_info
+            label: snprpc.blogauthor::lang.form.header
+            placeholder: snprpc.blogauthor::lang.form.header_placeholder
+            type: fileupload
+            mode: image
+            imageHeight: 260
+            imageWidth: 260
+            span: left
+
+        author_pen_name:
+            tab: snprpc.blogauthor::lang.form.tab_individu_info
+            label: snprpc.blogauthor::lang.form.pen_name
+            placeholder: snprpc.blogauthor::lang.form.pen_name_placeholder
+            type: text
+            span: left
+
+        author_identity:
+            tab: snprpc.blogauthor::lang.form.tab_individu_info
+            label: snprpc.blogauthor::lang.form.identity
+            placeholder: snprpc.blogauthor::lang.form.identity_placeholder
+            type: dropdown
+            options:
+                student: 学生
+                professional: 职业作家
+            placeholder: --- 身份 ---
+            span: left
+
+        author_description:
+            tab: snprpc.blogauthor::lang.form.tab_individu_info
+            label: snprpc.blogauthor::lang.form.description
+            placeholder: snprpc.blogauthor::lang.form.description_placeholder
+            type: textarea
+            oc.commentPosition: ''
+            size: large
+            span: full
+            type: textarea
+
+        author_real_name:
+            tab: snprpc.blogauthor::lang.form.tab_private_info
+            label: snprpc.blogauthor::lang.form.real_name
+            placeholder: snprpc.blogauthor::lang.form.real_name_placeholder
+            type: text
+            span: left
+
+        author_weixin_code:
+            tab: snprpc.blogauthor::lang.form.tab_private_info
+            label: snprpc.blogauthor::lang.form.weixin_code
+            placeholder: snprpc.blogauthor::lang.form.weixin_code_placeholder
+            type: text
+            span: left
+
+        author_tel:
+            tab: snprpc.blogauthor::lang.form.tab_private_info
+            label: snprpc.blogauthor::lang.form.tel
+            placeholder: snprpc.blogauthor::lang.form.tel_placeholder
+            type: text
+            span: left
+
+        author_email:
+            tab: snprpc.blogauthor::lang.form.tab_private_info
+            label: snprpc.blogauthor::lang.form.email
+            placeholder: snprpc.blogauthor::lang.form.email_placeholder
+            type: text
+            span: left
+
+        author_address:
+            tab: snprpc.blogauthor::lang.form.tab_private_info
+            label: snprpc.blogauthor::lang.form.address
+            placeholder: snprpc.blogauthor::lang.form.address_placeholder
+            type: text
+            span: left
