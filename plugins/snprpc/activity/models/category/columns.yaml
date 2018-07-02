@@ -1,0 +1,13 @@
+# ===================================
+#  Column Definitions
+# ===================================
+
+columns:
+
+    category_name:
+        label: snprpc.activity::lang.category.category_name
+        searchable: true
+
+    category_slug:
+        label: snprpc.activity::lang.category.category_slug
+        sortable: false

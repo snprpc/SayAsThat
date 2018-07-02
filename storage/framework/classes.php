@@ -199,4 +199,12 @@
   'System\\Console\\ThemeUse' => 'modules/system/console/ThemeUse.php',
   'Snprpc\\BlogAuthor\\Models\\Author' => 'plugins/snprpc/blogauthor/models/Author.php',
   'Backend\\Behaviors\\RelationController' => 'modules/backend/behaviors/RelationController.php',
+  'snprpc\\activity\\Plugin' => 'plugins/snprpc/activity/Plugin.php',
+  'RainLab\\User\\Models\\UserGroup' => 'plugins/rainlab/user/models/UserGroup.php',
+  'RainLab\\User\\Models\\Settings' => 'plugins/rainlab/user/models/Settings.php',
+  'RainLab\\User\\Components\\Session' => 'plugins/rainlab/user/components/Session.php',
+  'RainLab\\User\\Components\\Account' => 'plugins/rainlab/user/components/Account.php',
+  'RainLab\\User\\Components\\ResetPassword' => 'plugins/rainlab/user/components/ResetPassword.php',
+  'Snprpc\\Activity\\Models\\Activity' => 'plugins/snprpc/activity/models/Activity.php',
+  'Snprpc\\Activity\\Models\\Category' => 'plugins/snprpc/activity/models/Category.php',
 );

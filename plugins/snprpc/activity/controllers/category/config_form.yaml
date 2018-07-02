@@ -1,0 +1,21 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+name: snprpc.activity::lang.form.create_activity
+form: ~/plugins/snprpc/activity/models/category/fields.yaml
+modelClass: Snprpc\Activity\Models\Category
+defaultRedirect: snprpc/activity/category
+
+create:
+    title: snprpc.activity::lang.category.form.create_title
+    redirect: snprpc/activity/category/update/:id
+    redirectClose: snprpc/activity/category
+    flashSave: snprpc.activity::lang.category.form.create_success
+
+update:
+    title: snprpc.activity::lang.category.form.update_title
+    redirect: snprpc/activity/activity
+    redirectClose: snprpc/activity/activity
+    flashSave: snprpc.activity::lang.category.form.update_success
+    flashDelete: snprpc.activity::lang.form.category.delete_delete

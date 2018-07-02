@@ -18,4 +18,4 @@ update:
     redirect: snprpc/blogauthor/author
     redirectClose: snprpc/blogauthor/author
     flashSave: snprpc.blogauthor::lang.form.update_success
-    flashDelete: snprpc.blogauthor::lang.form.update_delete
+    flashDelete: snprpc.blogauthor::lang.form.delete_delete

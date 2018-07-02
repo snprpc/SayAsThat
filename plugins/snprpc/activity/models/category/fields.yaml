@@ -1,0 +1,16 @@
+# ===================================
+#  Field Definitions
+# ===================================
+
+fields:
+
+    category_name:
+        label: snprpc.activity::lang.category.form.category_name
+        placeholder: snprpc.activity::lang.category.form.category_name_placeholder
+        span: left
+
+    category_slug:
+        label: snprpc.activity::lang.category.form.category_slug
+        span: right
+        placeholder: snprpc.activity::lang.category.form.category_slug_placeholder
+        preset: name

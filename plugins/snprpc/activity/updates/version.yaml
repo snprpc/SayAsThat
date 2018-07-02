@@ -1,0 +1,4 @@
+1.0.1:
+    - First Version Of activity
+    - create_activities_table.php
+    - create_categories_table.php

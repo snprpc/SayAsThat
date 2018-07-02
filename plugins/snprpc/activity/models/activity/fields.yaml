@@ -1,0 +1,86 @@
+# ===================================
+#  Field Definitions
+# ===================================
+
+fields:
+
+    activity_title:
+        label: snprpc.activity::lang.form.activity_title
+        span: left
+        placeholder: snprpc.activity::lang.form.activity_title_placeholder
+
+    activity_slug:
+        label: snprpc.activity::lang.form.activity_slug
+        span: right
+        placeholder: snprpc.activity::lang.form.activity_slug_placeholder
+        preset:
+            field: activity_title
+            type: slug
+
+    toolbar:
+        type: partial
+        path: post_toolbar
+        cssClass: collapse-visible
+
+secondaryTabs:
+    stretch: true
+    fields:
+        activity_content:
+            tab: snprpc.activity::lang.form.tab_edit
+            type: RainLab\Blog\FormWidgets\BlogMarkdown
+            cssClass: field-slim blog-post-preview
+            stretch: true
+            mode: split
+
+        activity_category:
+            tab: snprpc.activity::lang.form.tab_category
+            type: relation
+            commentAbove: snprpc.activity::lang.form.category_comment
+            placeholder: snprpc.activity::lang.form.category_placeholder
+            select: category_name
+
+        activity_start_time:
+            tab: snprpc.activity::lang.form.tab_manage
+            label: snprpc.activity::lang.form.activity_start_time
+            span: left
+            type: datepicker
+            mode: date
+
+        activity_stop_time:
+            tab: snprpc.activity::lang.form.tab_manage
+            label: snprpc.activity::lang.form.activity_stop_time
+            span: left
+            type: datepicker
+            mode: date
+
+        activity_excerpt:
+            tab: snprpc.activity::lang.form.tab_manage
+            label: snprpc.activity::lang.form.activity_excerpt
+            type: textarea
+            span: left
+            size: small
+
+        activity_featured_image:
+            tab: snprpc.activity::lang.form.tab_manage
+            label: snprpc.activity::lang.form.activity_featured_image
+            type: fileupload
+            mode: image
+            span: right
+            imageWidth: 200
+            imageHeight: 200
+
+        activity_poster_horizontal:
+            tab: snprpc.activity::lang.form.tab_poster
+            label: snprpc.activity::lang.form.activity_poster_horizontal
+            type: fileupload
+            mode: image
+            imageWidth: 200
+            imageHeight: 200
+
+        activity_poster_vertical:
+            tab: snprpc.activity::lang.form.tab_poster
+            label: snprpc.activity::lang.form.activity_poster_vertical
+            type: fileupload
+            mode: image
+            imageWidth: 200
+            imageHeight: 200

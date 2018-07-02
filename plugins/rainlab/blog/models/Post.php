@@ -77,7 +77,7 @@ class Post extends Model
         'categories' => [
             'RainLab\Blog\Models\Category',
             'table' => 'rainlab_blog_posts_categories',
-            'order' => 'name'
+            'order' => 'name',
         ]
     ];
 

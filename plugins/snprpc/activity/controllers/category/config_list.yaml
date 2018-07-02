@@ -1,0 +1,20 @@
+# ===================================
+#  List Behavior Config
+# ===================================
+
+title: snprpc.activity::lang.category.list.title
+list: ~/plugins/snprpc/activity/models/category/columns.yaml
+modelClass: Snprpc\Activity\Models\Category
+recordUrl: snprpc/activity/category/update/:id
+noRecordsMessage: backend::lang.list.no_records
+recordsPerPage: 20
+showSetup: true
+showSorting: true
+defaultSort:
+    column: category_name
+    direction: asc
+showCheckboxes: true
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: backend::lang.list.search_prompt

@@ -30,7 +30,7 @@ return [
         'create_success'    =>  '作者资料录入成功!',
         'update_title'      =>  '修改作者资料',
         'update_success'    =>  '作者资料修改成功!',
-        'update_delete'     =>  '作者资料删除次成功!',
+        'delete_delete'     =>  '作者资料删除次成功!',
 
         'tab_author'        =>  '作者',
         'tab_private_info'  =>  '隐私信息',

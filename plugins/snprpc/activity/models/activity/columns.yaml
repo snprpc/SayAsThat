@@ -1,0 +1,30 @@
+# ===================================
+#  Column Definitions
+# ===================================
+
+columns:
+    activity_title:
+        label: snprpc.activity::lang.list.activity_title
+        searchable: true
+        sortable: true
+
+    activity_slug:
+        label: snprpc.activity::lang.list.activity_slug
+        invisible: false
+        searchable: true
+        sortable: true
+
+    activity_start_time:
+        label: snprpc.activity::lang.list.activity_start_time
+        type: date
+        sortable: true
+
+    activity_stop_time:
+        label: snprpc.activity::lang.list.activity_stop_time
+        type: date
+        sortable: true
+
+    created_at:
+        label: snprpc.activity::lang.list.created_at
+        type: date
+        invisible: true
