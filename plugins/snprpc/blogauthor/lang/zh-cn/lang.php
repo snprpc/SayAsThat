@@ -3,7 +3,11 @@
 return [
     'plugin' => [
         'name'          =>  '博客作者',
-        'description'   =>  '博客作者插件.'
+        'description'   =>  '博客拓展原创作者'
+    ],
+    'settings'  =>  [
+        'author_title'      =>  '文章作者',
+        'author_description'=>  '获取作者个人信息',
     ],
     'navigation' => [
         'authors'    =>  '作者'

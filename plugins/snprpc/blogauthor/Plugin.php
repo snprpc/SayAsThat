@@ -30,9 +30,7 @@ class Plugin extends PluginBase
     public function registerComponents()
     {
         return [
-            // 'Bedard\BlogTags\Components\BlogTags'      => 'blogTags',
-            // 'Bedard\BlogTags\Components\BlogTagSearch' => 'blogTagSearch',
-            // 'Bedard\BlogTags\Components\BlogRelated'   => 'blogRelated'
+            'Snprpc\BlogAuthor\Components\Author'   =>  'blogAuthor',
         ];
     }
 

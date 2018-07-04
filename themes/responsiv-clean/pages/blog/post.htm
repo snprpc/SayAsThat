@@ -10,23 +10,6 @@ categoryPage = "blog/category"
 
 [resources]
 less[] = "pages/blog.less"
-
-[blogRelated]
-slug = "{{ :slug }}"
-results = 5
-direction = "desc"
-postPage = "blog/post"
-
-[blogTagSearch]
-tag = "{{ :tag }}"
-page = "{{ :page }}"
-resultsPerPage = 10
-postPage = "blog/post"
-categoryPage = "blog/category"
-
-[blogTags]
-results = 5
-direction = "desc"
 ==
 <?php
 function onEnd()
@@ -43,7 +26,6 @@ function onEnd()
 {% set image = post.featured_images.first %}
 {% set nextPost = blogPost.nextPost %}
 {% set lastPost = blogPost.previousPost %}
-
 <div class="post-single">
     <article>
         {% if image %}
@@ -57,32 +39,24 @@ function onEnd()
 
         <div class="post-content">
             {{ post.content_html|raw }}
-        </div>    
-        <!-- <footer>
-            <span class="published"><i class="icon icon-calendar"></i> {{ post.published_at|date('M d, Y') }}</span>
-            {# <span class="author"><i class="icon icon-user"></i> {{ post.author.full_name }}</span> #}
-            {% if post.categories.count %} in
-                <span class="category">
-                    <i class="icon icon-folder-open"></i>
-                    {% for category in post.categories %}
-                        <a href="{{ category.url }}">{{ category.name }}</a>{% if not loop.last %}, {% endif %}
-                    {% endfor %}
-                </span>
-            {% endif %}
-        </footer> -->
+        </div>
     </article>
     <nav class="post-links">
-        {% if lastPost %}
-            <a href="{{ lastPost.url }}" class="link-previous">
-                <p>上一篇</p>
-                <span>{{ lastPost.title }}</span>
-            </a>
-        {% endif %}
-        {% if nextPost %}
-            <a href="{{ nextPost.url }}" class="link-next">
-                <p>下一篇</p>
-                <span>{{ nextPost.title }}</span>
-            </a>
-        {% endif %}
+        <div class="link-previous col-lg-6">
+            <p>上一篇</p>
+            {% if lastPost %}
+            <a href="{{ lastPost.url }}"><span>{{ lastPost.title }}</span></a>
+            {% else %}
+            <a href="{{ lastPost.url }}"><span>已经到头了</span></a>
+            {% endif %}
+        </div>
+        <div class="link-next col-lg-6">
+            <p>下一篇</p>
+            {% if nextPost %}
+            <a href="{{ nextPost.url }}"><span>{{ nextPost.title }}</span></a>
+            {% else %}
+            <a href="#"><span>已经到底了</span></a>
+            {% endif %}
+        </div>
     </nav>
 </div>

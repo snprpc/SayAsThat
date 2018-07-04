@@ -5,9 +5,7 @@ use Config;
 use Event;
 use System\Classes\PluginBase;
 
-/**
- * BlogTags Plugin Information File
- */
+
 class Plugin extends PluginBase
 {
 
@@ -23,12 +21,9 @@ class Plugin extends PluginBase
 
     public function registerComponents()
     {
-        // return [
-        //     // 'RainLab\Blog\Components\Post'       => 'blogPost',
-        //     // 'RainLab\Blog\Components\Posts'      => 'blogPosts',
-        //     // 'RainLab\Blog\Components\Categories' => 'blogCategories',
-        //     // 'RainLab\Blog\Components\RssFeed'    => 'blogRssFeed'
-        // ];
+        return [
+            'Snprpc\Activity\Components\Activity'   =>  'activity',
+        ];
     }
 
     public function registerNavigation()

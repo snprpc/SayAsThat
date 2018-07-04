@@ -1,0 +1,4 @@
+1.0.1:
+  - First version of Users
+  - create_users_table.php
+  - create_wechat_users_table.php

@@ -1,0 +1,39 @@
+title = "活动"
+url = "/activity/:activity_slug"
+layout = "default"
+description = "Viewing a single blog post"
+is_hidden = 0
+
+[activity]
+==
+function onEnd()
+{
+    if ($this->activity) {
+        $this->page->title = $this->activity->activity_title;
+    }
+    else {
+        return Redirect::to($this->pageUrl('404'));
+    }
+}
+==
+活动主题:<p>{{ activity.activity_title }}</p>
+活动别名:<p>{{ activity.activity_slug }}</p>
+开始时间:<p>{{ activity.activity_start_time }}</p>
+结束时间:<p>{{ activity.activity_stop_time }}</p>
+活动概要:<p>{{ activity.activity_excerpt }}</p>
+活动内容:<p>{{ activity.activity_content_html|raw }}</p>
+{% set image = activity.activity_featured_image.first %}
+{% set hposter = activity.activity_poster_horizontal.first %}
+{% set vposter = activity.activity_poster_vertical.first %}
+活动横版海报:
+<div class="activity-image">
+    <img src="{{ image.path }}" alt="{{ activity.activity_title }}" />
+</div>
+活动竖版海报:
+<div class="activity-hposter">
+    <img src="{{ hposter.path }}" alt="{{ activity.activity_title }}" />
+</div>
+活动特征图片:
+<div class="activity-vposter">
+    <img src="{{ vposter.path }}" alt="{{ activity.activity_title }}" />
+</div>

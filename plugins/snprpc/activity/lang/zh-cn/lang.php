@@ -10,6 +10,13 @@ return [
         'activity'      =>  '活动.',
         'category'      =>  '分类.',
     ],
+    'settings'  =>  [
+        'activity_title'        =>  '活动',
+        'activity_description'  =>  '渲染线下活动页面',
+
+        'activity_slug'             =>  '别名',
+        'activity_slug_description' =>  '活动别名',
+    ],
     'list' => [
         'title'         =>  '管理线下活动',
         'new_activity'  =>  '新线下活动',

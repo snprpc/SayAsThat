@@ -1,0 +1,21 @@
+description = "Empty layout"
+==
+<!DOCTYPE html>
+<html>
+    <head>
+        {% partial 'site/meta' %}
+    </head>
+    <body>
+
+        <div style="max-width: 1403px; margin: 0 auto">
+            <!-- Content -->
+            <section id="layout-content">
+                {% page %}
+            </section>
+
+        </div>
+
+        <!-- Scripts -->
+        {% partial 'site/scripts' %}
+    </body>
+</html>
