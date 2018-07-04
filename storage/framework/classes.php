@@ -227,4 +227,5 @@
   'Cms\\Classes\\ComponentPartial' => 'modules/cms/classes/ComponentPartial.php',
   'Cms\\Helpers\\File' => 'modules/cms/helpers/File.php',
   'snprpc\\user\\Plugin' => 'plugins/snprpc/user/Plugin.php',
+  'RainLab\\User\\Models\\MailBlocker' => 'plugins/rainlab/user/models/MailBlocker.php',
 );

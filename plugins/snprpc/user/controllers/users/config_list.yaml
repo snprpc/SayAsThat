@@ -3,16 +3,15 @@
 # ===================================
 
 # List Title
-title: rainlab.user::lang.users.list_title
+title: snprpc.user::lang.list.title
 
 # Model List Column configuration
-list: $/rainlab/user/models/user/columns.yaml
-
+list: ~/plugins/snprpc/user/models/user/columns.yaml
 # Model Class name
-modelClass: RainLab\User\Models\User
+modelClass: Snprpc\User\Models\User
 
 # Link URL for each record
-recordUrl: rainlab/user/users/preview/:id
+recordUrl: snprpc/user/users/preview/:user_id
 
 # Message to display if the list is empty
 noRecordsMessage: backend::lang.list.no_records
@@ -26,8 +25,8 @@ showCheckboxes: true
 # Displays the list column set up button
 showSetup: true
 
-# Filter widget configuration
-filter: config_filter.yaml
+# # Filter widget configuration
+# filter: config_filter.yaml
 
 # Toolbar widget configuration
 toolbar:

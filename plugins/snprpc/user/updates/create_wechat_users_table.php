@@ -12,6 +12,7 @@ class CreateWechatUsersTable extends Migration
         {
             $table->engine = 'InnoDB';
             $table->increments('id');
+            $table->integer('user_id')->nullable()->unsigned();
             $table->tinyInteger('subscribe');
             $table->string('openid');
             $table->string('nickname');
@@ -23,6 +24,9 @@ class CreateWechatUsersTable extends Migration
             $table->string('headimgurl');
             $table->string('subscribe_time');
             $table->timestamps();
+            $table->foreign('user_id')
+                ->references('user_id')
+                ->on('snprpc_users');
         });
     }
 
