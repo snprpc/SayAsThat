@@ -1,6 +1,6 @@
 title = "活动"
 url = "/activity/:activity_slug"
-layout = "default"
+layout = "detail"
 description = "Viewing a single blog post"
 is_hidden = 0
 
@@ -25,7 +25,7 @@ function onEnd()
 {% set image = activity.activity_featured_image.first %}
 {% set hposter = activity.activity_poster_horizontal.first %}
 {% set vposter = activity.activity_poster_vertical.first %}
-活动横版海报:
+<!-- 活动横版海报:
 <div class="activity-image">
     <img src="{{ image.path }}" alt="{{ activity.activity_title }}" />
 </div>
@@ -36,4 +36,4 @@ function onEnd()
 活动特征图片:
 <div class="activity-vposter">
     <img src="{{ vposter.path }}" alt="{{ activity.activity_title }}" />
-</div>
+</div> -->

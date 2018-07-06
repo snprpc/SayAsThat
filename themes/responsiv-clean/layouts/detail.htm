@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% partial 'site/meta' %}
+    </head>
+    <body>
+
+        <div style=" margin: 0 auto">
+            <!-- Header -->
+            <header id="layout-header">
+                {% partial 'site/header' %}
+            </header>
+
+            <section id = "layout-image">
+                {% partial 'site/detailImage' %}
+            </section>
+
+
+
+            <!-- Sidebar -->
+            <!-- <section id="layout-sidebar" class="visible-xs visible-ms">
+                {% partial 'site/sidebar' %}
+            </section> -->
+
+            <!-- Content -->
+            <section id="layout-content">
+                {% page %}
+            </section>
+
+            <!-- Footer -->
+            <footer id="layout-footer">
+                {% partial 'site/footer' %}
+            </footer>
+        </div>
+
+        <!-- Scripts -->
+        {% partial 'site/scripts' %}
+    </body>
+</html>

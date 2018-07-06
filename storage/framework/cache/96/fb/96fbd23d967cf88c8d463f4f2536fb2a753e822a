@@ -1,0 +1,110 @@
+1530880159a:1:{s:15:"site/header.htm";a:6:{s:8:"fileName";s:15:"site/header.htm";s:7:"content";s:2251:"[blogCategories]
+==
+<nav class="navbar" role="navigation">
+    <div class="navbar-header col-md-3">
+        <div class="row">
+            <div class="col-sm-9 col-xs-9">
+                <h1 class="site-name">
+                    <a href="{{ 'home'|page }}">{{ this.theme.site_name }}</a>
+                </h1>
+                <div class="site-motto">
+                    {{ this.theme.site_motto }}
+                </div>
+            </div>
+            <div class="col-sm-3 col-xs-3">
+                <button type="button" class="sidebar-toggle visible-xs visible-ms" onclick="toggleSidebar()">
+                    <span class="icon-bars">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="navbar-cell col-md-3  hidden-xs hidden-ms">
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">活动</a></li>
+            <li><a href="#">精选</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    文章
+                    <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                    {% set categories = blogCategories.categories %}
+                    {% for category in categories %}
+                        <li><a href="{{ category.url }}">{{ category.name }}</a></li>
+                        <li>{{ category.url }}</li>
+                    {% endfor %}
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="navbar-cell col-md-3  hidden-xs hidden-ms">
+        <ul class="nav navbar-nav">
+            <li><a href="#">关于我们</a></li>
+            <li><a href="#">悄悄话</a></li>
+            <li><a href="#">作者</a></li>
+        </ul>
+    </div>
+    <div class="navbar-cell col-md-offset-1 col-md-2 hidden-xs hidden-ms">
+        <button type="button" class="btn btn-danger navbar-button" style="margin-top: 15px; margin-bottom: 15px;">微信登录</button>
+    </div>
+
+</nav>
+";s:5:"mtime";i:1530713046;s:6:"markup";s:2230:"<nav class="navbar" role="navigation">
+    <div class="navbar-header col-md-3">
+        <div class="row">
+            <div class="col-sm-9 col-xs-9">
+                <h1 class="site-name">
+                    <a href="{{ 'home'|page }}">{{ this.theme.site_name }}</a>
+                </h1>
+                <div class="site-motto">
+                    {{ this.theme.site_motto }}
+                </div>
+            </div>
+            <div class="col-sm-3 col-xs-3">
+                <button type="button" class="sidebar-toggle visible-xs visible-ms" onclick="toggleSidebar()">
+                    <span class="icon-bars">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="navbar-cell col-md-3  hidden-xs hidden-ms">
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">活动</a></li>
+            <li><a href="#">精选</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    文章
+                    <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                    {% set categories = blogCategories.categories %}
+                    {% for category in categories %}
+                        <li><a href="{{ category.url }}">{{ category.name }}</a></li>
+                        <li>{{ category.url }}</li>
+                    {% endfor %}
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="navbar-cell col-md-3  hidden-xs hidden-ms">
+        <ul class="nav navbar-nav">
+            <li><a href="#">关于我们</a></li>
+            <li><a href="#">悄悄话</a></li>
+            <li><a href="#">作者</a></li>
+        </ul>
+    </div>
+    <div class="navbar-cell col-md-offset-1 col-md-2 hidden-xs hidden-ms">
+        <button type="button" class="btn btn-danger navbar-button" style="margin-top: 15px; margin-bottom: 15px;">微信登录</button>
+    </div>
+
+</nav>";s:4:"code";N;s:14:"blogCategories";a:0:{}}}

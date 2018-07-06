@@ -1,0 +1,20 @@
+1530876386a:1:{s:17:"site/activity.htm";a:5:{s:8:"fileName";s:17:"site/activity.htm";s:7:"content";s:481:"<div class="activity">
+    <div id="activity-image-horizontal" class="activity-image-horizontal col-lg col-md visible-lg visible-md">
+        <img src="\themes\responsiv-clean\assets\images\activity-horizontal.jpeg"/>
+    </div>
+    <div id="activity-image-vertical" class="activity-image-vertical col-sm col-xs visible-sm visible-xs">
+        <img src="\themes\responsiv-clean\assets\images\activity-vertical.jpg"/>
+    </div>
+    <div class="activity-summary">
+    </div>
+</div>
+";s:5:"mtime";i:1530858813;s:6:"markup";s:480:"<div class="activity">
+    <div id="activity-image-horizontal" class="activity-image-horizontal col-lg col-md visible-lg visible-md">
+        <img src="\themes\responsiv-clean\assets\images\activity-horizontal.jpeg"/>
+    </div>
+    <div id="activity-image-vertical" class="activity-image-vertical col-sm col-xs visible-sm visible-xs">
+        <img src="\themes\responsiv-clean\assets\images\activity-vertical.jpg"/>
+    </div>
+    <div class="activity-summary">
+    </div>
+</div>";s:4:"code";N;}}

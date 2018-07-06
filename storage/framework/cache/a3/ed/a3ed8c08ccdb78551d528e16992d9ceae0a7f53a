@@ -1,0 +1,78 @@
+1530880157a:1:{s:10:"detail.htm";a:5:{s:8:"fileName";s:10:"detail.htm";s:7:"content";s:954:"<!DOCTYPE html>
+<html>
+    <head>
+        {% partial 'site/meta' %}
+    </head>
+    <body>
+
+        <div style=" margin: 0 auto">
+            <!-- Header -->
+            <header id="layout-header">
+                {% partial 'site/header' %}
+            </header>
+
+            <section id = "layout-image">
+                {% partial 'site/detailImage' %}
+            </section>
+
+
+
+            <!-- Sidebar -->
+            <!-- <section id="layout-sidebar" class="visible-xs visible-ms">
+                {% partial 'site/sidebar' %}
+            </section> -->
+
+            <!-- Content -->
+            <section id="layout-content">
+                {% page %}
+            </section>
+
+            <!-- Footer -->
+            <footer id="layout-footer">
+                {% partial 'site/footer' %}
+            </footer>
+        </div>
+
+        <!-- Scripts -->
+        {% partial 'site/scripts' %}
+    </body>
+</html>
+";s:5:"mtime";i:1530858217;s:6:"markup";s:952:"<!DOCTYPE html>
+<html>
+    <head>
+        {% partial 'site/meta' %}
+    </head>
+    <body>
+
+        <div style=" margin: 0 auto">
+            <!-- Header -->
+            <header id="layout-header">
+                {% partial 'site/header' %}
+            </header>
+
+            <section id = "layout-image">
+                {% partial 'site/detailImage' %}
+            </section>
+
+
+
+            <!-- Sidebar -->
+            <!-- <section id="layout-sidebar" class="visible-xs visible-ms">
+                {% partial 'site/sidebar' %}
+            </section> -->
+
+            <!-- Content -->
+            <section id="layout-content">
+                {% page %}
+            </section>
+
+            <!-- Footer -->
+            <footer id="layout-footer">
+                {% partial 'site/footer' %}
+            </footer>
+        </div>
+
+        <!-- Scripts -->
+        {% partial 'site/scripts' %}
+    </body>
+</html>";s:4:"code";N;}}

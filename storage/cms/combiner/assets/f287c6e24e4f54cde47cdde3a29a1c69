@@ -1,0 +1,25 @@
+@import "../theme/boot";
+
+//
+// Home
+//
+// Styles specific to the /home page
+//
+
+.home-posts {
+    .clearfix;
+    margin: 0 4%;
+
+    .home-post {
+        margin: 0 1%;
+        width: 47%;
+        float: left;
+    }
+}
+
+@media (max-width: @screen-xs-max) {
+    .home-posts .home-post {
+        width: 100%;
+        margin: 0;
+    }
+}

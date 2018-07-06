@@ -1,0 +1,107 @@
+1530880157a:1:{s:13:"blog/post.htm";a:12:{s:8:"fileName";s:13:"blog/post.htm";s:7:"content";s:1606:"title = "Blog Post"
+url = "/blog/post/:slug"
+layout = "default"
+description = "Viewing a single blog post"
+is_hidden = 0
+
+[blogPost]
+slug = "{{ :slug }}"
+categoryPage = "blog/category"
+
+[resources]
+less[] = "pages/blog.less"
+==
+<?php
+function onEnd()
+{
+    if ($this->post) {
+        $this->page->title = $this->post->title;
+    }
+    else {
+        return Redirect::to($this->pageUrl('404'));
+    }
+}
+?>
+==
+{% set image = post.featured_images.first %}
+{% set nextPost = blogPost.nextPost %}
+{% set lastPost = blogPost.previousPost %}
+<div class="post-single">
+    <article>
+        {% if image %}
+            <div class="post-image">
+                <img src="{{ image.path }}" alt="{{ post.title }}" />
+            </div>
+        {% endif %}
+        <header class="post-title">
+            <h2>{{ post.title }}</h2>
+        </header>
+
+        <div class="post-content">
+            {{ post.content_html|raw }}
+        </div>
+    </article>
+    <nav class="post-links">
+        <div class="link-previous col-lg-6">
+            <p>上一篇</p>
+            {% if lastPost %}
+            <a href="{{ lastPost.url }}"><span>{{ lastPost.title }}</span></a>
+            {% else %}
+            <a href="{{ lastPost.url }}"><span>已经到头了</span></a>
+            {% endif %}
+        </div>
+        <div class="link-next col-lg-6">
+            <p>下一篇</p>
+            {% if nextPost %}
+            <a href="{{ nextPost.url }}"><span>{{ nextPost.title }}</span></a>
+            {% else %}
+            <a href="#"><span>已经到底了</span></a>
+            {% endif %}
+        </div>
+    </nav>
+</div>
+";s:5:"mtime";i:1530713046;s:6:"markup";s:1197:"{% set image = post.featured_images.first %}
+{% set nextPost = blogPost.nextPost %}
+{% set lastPost = blogPost.previousPost %}
+<div class="post-single">
+    <article>
+        {% if image %}
+            <div class="post-image">
+                <img src="{{ image.path }}" alt="{{ post.title }}" />
+            </div>
+        {% endif %}
+        <header class="post-title">
+            <h2>{{ post.title }}</h2>
+        </header>
+
+        <div class="post-content">
+            {{ post.content_html|raw }}
+        </div>
+    </article>
+    <nav class="post-links">
+        <div class="link-previous col-lg-6">
+            <p>上一篇</p>
+            {% if lastPost %}
+            <a href="{{ lastPost.url }}"><span>{{ lastPost.title }}</span></a>
+            {% else %}
+            <a href="{{ lastPost.url }}"><span>已经到头了</span></a>
+            {% endif %}
+        </div>
+        <div class="link-next col-lg-6">
+            <p>下一篇</p>
+            {% if nextPost %}
+            <a href="{{ nextPost.url }}"><span>{{ nextPost.title }}</span></a>
+            {% else %}
+            <a href="#"><span>已经到底了</span></a>
+            {% endif %}
+        </div>
+    </nav>
+</div>";s:4:"code";s:167:"function onEnd()
+{
+    if ($this->post) {
+        $this->page->title = $this->post->title;
+    }
+    else {
+        return Redirect::to($this->pageUrl('404'));
+    }
+}";s:5:"title";s:9:"Blog Post";s:3:"url";s:16:"/blog/post/:slug";s:6:"layout";s:7:"default";s:11:"description";s:26:"Viewing a single blog post";s:9:"is_hidden";s:1:"0";s:8:"blogPost";a:2:{s:4:"slug";s:11:"{{ :slug }}";s:12:"categoryPage";s:13:"blog/category";}s:9:"resources";a:1:{s:4:"less";a:1:{i:0;s:15:"pages/blog.less";}}}}

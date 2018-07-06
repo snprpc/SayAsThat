@@ -1,0 +1,107 @@
+1530880469a:1:{s:20:"site/detailImage.htm";a:7:{s:8:"fileName";s:20:"site/detailImage.htm";s:7:"content";s:1998:"[activity]
+activity_slug = {{:activity_slug}}
+
+[resources]
+js[]='pages/StackBlur.js'
+==
+
+
+==
+{% set image = activity.activity_featured_image.first %}
+<!-- <div class="Image">
+
+    <img id="detailImage" class="detailImage " src="\themes\responsiv-clean\assets\images\activity-horizontal.jpeg"/>
+    <canvas id="canvas" width="256" height="191"></canvas>
+</div> -->
+
+<div class="imageBlur">
+    <!-- <img src="\themes\responsiv-clean\assets\images\activity2.jpg" id="noblur" class="noblur"/> -->
+</div>
+
+
+
+
+
+    <!-- <img src="\themes\responsiv-clean\assets\images\activity-horizontal.jpeg" id="noblur" class="noblur"/> -->
+
+
+
+<!-- <script src="\themes\responsiv-clean\assets\javascript\pages\StackBlur.js"></script> -->
+
+<script type="text/javascript">
+    // stackBlurImage( "blur", "canvas", 180, false );
+    // var screenHeight = document.body.clientHeight;
+    //
+    // var headerHeight = document.getElementById("layout-header").offsetHeight;
+    // var layoutImage = document.getElementById("layout-image");
+    // var canvas = document.getElementById("canvas");
+    // layoutImage.style.height = 'calc(80vh - '+headerHeight+'px)';
+    // canvas.style.height = 'calc(80vh - '+headerHeight+'px)';
+
+
+
+
+
+
+
+    // document.getElementById("canvas").style.width = screenWidth + 'px';
+    // document.getElementById("blur").style.width = screenWidth + 'px';
+    // document.getElementById("layout-image").style.height = (screenHeight*0.8) + 'px';
+    // document.getElementById("canvas").style.height = (screenHeight*0.8) + 'px';
+    // document.getElementById("blur").style.height = (screenHeight*0.8) + 'px';
+
+    // document.getElementById("canvas").style.width = '100%';
+    // document.getElementById("blur").style.width = '100%';
+    // document.getElementById("layout-image").style.height = '10%';
+    // document.getElementById("canvas").style.height = '100%';
+    // document.getElementById("blur").style.height = '70%';
+</script>
+";s:5:"mtime";i:1530878374;s:6:"markup";s:1894:"{% set image = activity.activity_featured_image.first %}
+<!-- <div class="Image">
+
+    <img id="detailImage" class="detailImage " src="\themes\responsiv-clean\assets\images\activity-horizontal.jpeg"/>
+    <canvas id="canvas" width="256" height="191"></canvas>
+</div> -->
+
+<div class="imageBlur">
+    <!-- <img src="\themes\responsiv-clean\assets\images\activity2.jpg" id="noblur" class="noblur"/> -->
+</div>
+
+
+
+
+
+    <!-- <img src="\themes\responsiv-clean\assets\images\activity-horizontal.jpeg" id="noblur" class="noblur"/> -->
+
+
+
+<!-- <script src="\themes\responsiv-clean\assets\javascript\pages\StackBlur.js"></script> -->
+
+<script type="text/javascript">
+    // stackBlurImage( "blur", "canvas", 180, false );
+    // var screenHeight = document.body.clientHeight;
+    //
+    // var headerHeight = document.getElementById("layout-header").offsetHeight;
+    // var layoutImage = document.getElementById("layout-image");
+    // var canvas = document.getElementById("canvas");
+    // layoutImage.style.height = 'calc(80vh - '+headerHeight+'px)';
+    // canvas.style.height = 'calc(80vh - '+headerHeight+'px)';
+
+
+
+
+
+
+
+    // document.getElementById("canvas").style.width = screenWidth + 'px';
+    // document.getElementById("blur").style.width = screenWidth + 'px';
+    // document.getElementById("layout-image").style.height = (screenHeight*0.8) + 'px';
+    // document.getElementById("canvas").style.height = (screenHeight*0.8) + 'px';
+    // document.getElementById("blur").style.height = (screenHeight*0.8) + 'px';
+
+    // document.getElementById("canvas").style.width = '100%';
+    // document.getElementById("blur").style.width = '100%';
+    // document.getElementById("layout-image").style.height = '10%';
+    // document.getElementById("canvas").style.height = '100%';
+    // document.getElementById("blur").style.height = '70%';
+</script>";s:4:"code";s:0:"";s:8:"activity";a:1:{s:13:"activity_slug";s:18:"{{:activity_slug}}";}s:9:"resources";a:1:{s:2:"js";a:1:{i:0;s:18:"pages/StackBlur.js";}}}}

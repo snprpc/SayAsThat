@@ -1,0 +1,49 @@
+1530880159a:1:{s:16:"site/sidebar.htm";a:7:{s:8:"fileName";s:16:"site/sidebar.htm";s:7:"content";s:851:"[blogPosts]
+[blogCategories]
+postsPerPage = "5"
+categoryPage = "blog/category"
+postPage = "blog/post"
+sortOrder = "published_at desc"
+==
+<div class="hidden-md">
+    <div class="sidebar-close visible-xs visible-ms">
+        <a href="javascript:;" onclick="toggleSidebar()" class="close">&times;</a>
+    </div>
+
+    <div class="sidebar-segment">
+        <h2 class="segment-title">活动</h2>
+        <ul class="segment-list">
+            <li><a href="#">活动一</a></li>
+        </ul>
+    </div>
+    <div class="sidebar-segment">
+        <h2 class="segment-title">文章</h2>
+        <ul class="segment-list">
+            {% set categories = blogCategories.categories %}
+            {% for category in categories %}
+                <li><a href="{{ category.url }}">{{ category.name }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+";s:5:"mtime";i:1530773163;s:6:"markup";s:713:"<div class="hidden-md">
+    <div class="sidebar-close visible-xs visible-ms">
+        <a href="javascript:;" onclick="toggleSidebar()" class="close">&times;</a>
+    </div>
+
+    <div class="sidebar-segment">
+        <h2 class="segment-title">活动</h2>
+        <ul class="segment-list">
+            <li><a href="#">活动一</a></li>
+        </ul>
+    </div>
+    <div class="sidebar-segment">
+        <h2 class="segment-title">文章</h2>
+        <ul class="segment-list">
+            {% set categories = blogCategories.categories %}
+            {% for category in categories %}
+                <li><a href="{{ category.url }}">{{ category.name }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>";s:4:"code";N;s:9:"blogPosts";a:0:{}s:14:"blogCategories";a:4:{s:12:"postsPerPage";s:1:"5";s:12:"categoryPage";s:13:"blog/category";s:8:"postPage";s:9:"blog/post";s:9:"sortOrder";s:17:"published_at desc";}}}

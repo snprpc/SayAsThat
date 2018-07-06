@@ -7,7 +7,7 @@ description = "Default layout"
     </head>
     <body>
 
-        <div style="max-width: 1403px; margin: 0 auto">
+        <div style=" margin: 0 auto">
             <!-- Header -->
             <header id="layout-header">
                 {% partial 'site/header' %}
@@ -19,9 +19,9 @@ description = "Default layout"
             </section>
 
             <!-- Sidebar -->
-            <section id="layout-sidebar" class="visible-xs visible-ms">
+            <!-- <section id="layout-sidebar" class="visible-xs visible-ms">
                 {% partial 'site/sidebar' %}
-            </section>
+            </section> -->
 
             <!-- Content -->
             <section id="layout-content">
@@ -38,3 +38,42 @@ description = "Default layout"
         {% partial 'site/scripts' %}
     </body>
 </html>
+
+<script type="text/javascript">
+    var screenHeight = document.body.clientHeight;
+    var headerHeight = document.getElementById("layout-header").offsetHeight;
+    var layoutActivity = document.getElementById("layout-activity");
+    var activityImageHorizontal = document.getElementById("activity-image-horizontal");
+    var activityImageVertical = document.getElementById("activity-image-vertical");
+    layoutActivity.style.height = 'calc(100vh - '+headerHeight+'px)';
+    activityImageHorizontal.style.height = 'calc(100vh - '+headerHeight+'px)';
+    activityImageVertical.style.height = 'calc(100vh - '+headerHeight+'px)';
+
+
+
+    var canScroll = true;
+    var screenHeight = $(window).height();
+
+    $(document).scroll(function(){
+        var before = $(window).scrollTop();
+        $(document).scroll(function(){
+            var after = $(window).scrollTop();
+            if(before<after && after>0 && after<screenHeight*0.5 && canScroll){
+                canScroll = false;
+                $("html,body").animate({
+                    scrollTop:$("#layout-content").offset().top},300,function(){
+                        before = after;
+                        canScroll = true;
+                    });
+            }
+            if (before>after && after>screenHeight*0.5 && after<screenHeight*0.9 && canScroll) {
+                canScroll = false;
+                $("html,body").animate({
+                    scrollTop:$("#layout-header").offset().top},300,function(){
+                        before = after;
+                        canScroll = true;
+                    });
+            }
+        });
+    });
+</script>
